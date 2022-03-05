@@ -1,6 +1,6 @@
 import React from 'react'
-import './css/CheckoutProduct.css'
-import { useStateValue } from './StateProvider'
+import '../css/CheckoutProduct.css'
+import { useStateValue } from '../Context/StateProvider'
 
 const CheckoutProduct = ({ id, title, price, image, rating }) => {
 
@@ -21,7 +21,7 @@ const CheckoutProduct = ({ id, title, price, image, rating }) => {
                     {title}
                 </p>
                 <p className='checkoutProduct__price'>
-                    <small>Rs </small>
+                    <small>$ </small>
                     <strong>{price}</strong>
                 </p>
                 <div className='checkoutProduct__rating'>

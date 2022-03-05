@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link, useNavigate as useHistory } from 'react-router-dom'
-import './css/Login.css'
-import Logo from './images/logo1.jpg'
-import { auth } from './firebase'
-import { useStateValue } from './StateProvider'
+import '../css/Login.css'
+import Logo from '../images/logo1.jpg'
+import { auth } from '../firebase'
+import { useStateValue } from '../Context/StateProvider'
 
 const Login = () => {
 

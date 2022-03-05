@@ -1,5 +1,5 @@
 import React from 'react'
-import './css/Home.css'
+import '../css/Home.css'
 import Product from './Product'
 import Carousel from 'react-material-ui-carousel'
 
@@ -21,26 +21,26 @@ const Home = () => {
                     <Product title="Charley and the chocolate factory"
                         id="789"
                         image="https://picture.readfrom.net/img/roald-dahl/charlie_and_the_chocolate_factory.jpg"
-                        price={25.99}
+                        price={35.99}
                         rating={4} />
-                    <Product title="Charley and the chocolate factory"
+                    <Product title="The Da Vinci Code"
                         id="987"
-                        image="https://picture.readfrom.net/img/roald-dahl/charlie_and_the_chocolate_factory.jpg"
-                        price={25.99}
+                        image="https://bestlifeonline.com/wp-content/uploads/sites/3/2020/10/The-Da-Vinci-Code-book-cover.jpg?resize=500,896&quality=82&strip=all"
+                        price={15.99}
                         rating={4} />
-                    <Product title="Charley and the chocolate factory"
+                    <Product title="Journey to the Center of the Earth"
                         id="654"
-                        image="https://picture.readfrom.net/img/roald-dahl/charlie_and_the_chocolate_factory.jpg"
-                        price={25.99}
+                        image="https://images-na.ssl-images-amazon.com/images/I/51aWl+zfIvL._SY344_BO1,204,203,200_.jpg"
+                        price={55.99}
                         rating={4} />
                 </div>
 
                 <div className="home__row">
 
-                    <Product title="Harry Potter"
+                    <Product title="The Martian"
                         id="123"
                         price={29.99}
-                        image="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg/220px-Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg"
+                        image="https://images-na.ssl-images-amazon.com/images/I/91pw0THBwBL.jpg"
                         rating={5} />
                     <Product title="Harry Potter"
                         id="456"

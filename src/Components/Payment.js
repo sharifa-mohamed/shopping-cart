@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import CheckoutProduct from './CheckoutProduct';
-import './css/Payment.css'
-import { useStateValue } from './StateProvider'
+import '../css/Payment.css'
+import { useStateValue } from '../Context/StateProvider'
 const Payment = () => {
     const [{ user, basket }, dispatch] = useStateValue();
 
@@ -13,7 +13,7 @@ const Payment = () => {
                 <h1>Checkout (<Link to="/checkout">{basket?.length} items</Link>)</h1>
 
                 {/** delivery */}
-                <div className="payment__section">
+                {/* <div className="payment__section">
                     <div className="payment__title">
                         <h3>Delivery Address</h3>
                     </div>
@@ -24,7 +24,7 @@ const Payment = () => {
                     </div>
 
 
-                </div>
+                </div> */}
                 {/** Review item */}
                 <div className="payment__section">
                     <div className="payment__title">
@@ -43,16 +43,17 @@ const Payment = () => {
 
                 </div>
                 {/** Payment method */}
-                <div className="payment__section">
+                {/*   <div className="payment__section">
                     <div className="payment__title">
                         <h3>Payment Method</h3>
                     </div>
 
                     <div className="payment__details">
-                        {/**Stripe.. */}
+                       
                     </div>
 
-                </div>
+                </div> 
+                */}
 
             </div>
         </div>

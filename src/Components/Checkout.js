@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CheckoutProduct from './CheckoutProduct'
-import "./css/Checkout.css"
-import { useStateValue } from './StateProvider'
+import "../css/Checkout.css"
+import { useStateValue } from '../Context/StateProvider'
 import Subtotal from './Subtotal'
 
 const Checkout = () => {
 
     const [{ basket, user }, dispatch] = useStateValue();
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div className='checkout'>

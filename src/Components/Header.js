@@ -1,11 +1,11 @@
 import React from 'react'
-import './css/Header.css'
-import Logo from './images/logo.jpeg'
+import '../css/Header.css'
+import Logo from '../images/logo.jpeg'
 import SearchIcon from '@material-ui/icons/Search'
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
 import { Link } from 'react-router-dom'
-import { useStateValue } from './StateProvider'
-import { auth } from './firebase'
+import { useStateValue } from '../Context/StateProvider'
+import { auth } from '../firebase'
 
 const Header = () => {
 
